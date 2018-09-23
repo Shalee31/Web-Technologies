@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+
+<body>
+    <h1> Registration Form</h1>
+    <form id="register">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <label>Enter first name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fname" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter last name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lname" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="pwd" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Select Gender:</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" value="Male" /> Male</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="radio" name="gender" value="Female" /> Female </td>
+                </tr>
+                <td>
+                    <label>Select Qualification:</label>
+                </td>
+                <td>
+                    <input type="checkbox" name="qual" value="ssc" /> SSC</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="qual" value="hsc" /> HSC</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="checkbox" name="qual" value="be" /> BE</td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Select City:</label>
+                    </td>
+                    <td>
+                        <select name="city" multiple>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Indore">Indore</option>
+                            <option value="Pune">Pune</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Enter Address:</label>
+                    </td>
+                    <td>
+                        <textarea cols="20" rows="5" name="address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Upload file:</label>
+                    </td>
+                    <td>
+                        <input type="file" name="upload" multiple />
+                    </td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="subscribe" value="true" checked/>
+                        <label>Subscribe for emails.</label>
+                    </td>
+                </tr>
+                <!--HTML FORM Elements-->
+                <tr>
+                    <td>
+                        <label>Select Color:</label>
+                    </td>
+                    <td>
+                        <input type="color" name="favcolor" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Select Date before 12/03/1997:</label>
+                    </td>
+                    <td>
+                        <input type="date" name="date" max="1997-12-03" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Select your b'day:</label>
+                    </td>
+                    <td>
+                        <input type="datetime-local" name="dob" />
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Select for a car:</label>
+                    </td>
+                    <td>
+                        <input type="search" name="search" list="carlist" />
+                        <datalist id="carlist">
+                            <option>Swift</option>
+                            <option>Verna</option>
+                            <option>Duster</option>
+                            <option>Skoda</option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="Submit" value="Register" onclick="storedetails()" >
+                    </td>
+                    <td>
+                        <input type="Submit" value="Update" formaction="/register" formmethod="post"></td></tr>
+                        <tr><td><input type="Submit" value="Delete" formaction="/register" formmethod="get"></td>
+                            <td><input type="Submit" value="Delete" formaction="/register" formtarget="self"></td></tr>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <video controls> 
+        <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+        </video>
+</body>
+
+</html>

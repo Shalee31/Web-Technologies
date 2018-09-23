@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" type="text/css" href="ext.css">
+    </head>
+    <body>
+        <h1 id= "alignment1">Registration Form</h1>
+        <form action="Form2.html">
+            <div id = "form1">
+                <table align=center cellspacing="4px" width=80%>
+                <tr><td><h4 style=" padding-bottom: 2px">Name: </td>
+                    <td><input type= "text" placeholder="First Name - Last Name" class="space"></h4></td></tr>
+
+                <tr><td><h4 style=" padding-bottom: 2px">Email: </td>
+                    <td><input  class="space" type= "email" name="email" placeholder="something@company.domain" 
+                        required="" type= "email" pattern= "[a-z0-9._%+-]+@[a-z0-9]+\.[a-z]{2,3}$"></h4></td></tr>
+
+                <tr><td><h4 style="padding-bottom: 2px">Contact Number: </td>
+                    <td><input type= "text" class="space" placeholder="Enter Valid Number" pattern="[6-9]{1}[0-9]{9}"></h4></td></tr>
+
+                <tr><td><h4 style=" padding-bottom: 2px">Password: </td>
+                    <td><input  class="space" placeholder="Enter Password" type= "password"></h4></td></tr>
+                </table>
+                <input style="margin-left: 200px" type= "submit" class="button button1" value="Next" >
+            </div>
+        </form>
+        
+    </body>
+</html>

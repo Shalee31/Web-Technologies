@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="calculator.css" />
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <form name="calform" id="cal">
+        <table cellspacing="1px" cellpadding="5px" width=40%>
+            <caption>
+                <center>
+                    <h2> Form</h2>
+                </center>
+            </caption>
+            <tr><td><label> Enter the num1:</label></td>
+                <td><input type="text" name="num1">
+                    <span id="num1span"></span></td>
+            </tr>
+            <tr><td><label> Enter the num2: </label></td>
+                <td><input type="text" name="num2">
+                    <span id="num2span"></span> </td>
+            </tr>
+            <tr><td><input type="button" value="Addition" id="Addition" onclick="return calculate(this)"></td>
+                <td><input type="button" value="Subtraction" id="Subtraction" onclick="return calculate(this)"></td>
+            <tr><td><input type="button" value="Multiplication" id="Multiplication" onclick="return calculate(this)"></td>
+                <td><input type="button" value="Division" id="Division" onclick="return calculate(this)"></td>
+            </tr>
+        </table>
+    </form>
+    <span id="resultspan"></span>
+</body>
+</html>

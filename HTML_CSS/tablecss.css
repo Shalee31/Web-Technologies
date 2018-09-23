@@ -1,0 +1,28 @@
+#paleblue1{
+        text-align: center;
+        margin-left: 350px;
+        border-spacing: 2px;
+        border-collapse: separate;
+        width: 50%;
+    }
+    #paleblue1 tfoot td{
+        background-color: white;
+        border-top: 3px solid black ;
+    }
+    
+    #paleblue1 td, #paleblue1 th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+    
+    #paleblue1 tr:nth-child(odd){background-color: skyblue}
+    
+    #paleblue1 th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color:rgb(37, 37, 199);
+        color: white;
+    }
+    
+
